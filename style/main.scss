@@ -148,13 +148,22 @@ section {
             font-family: 'Myriad Pro';
             font-weight: bold;
 
-            p {
-                text-align: left;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
 
-                span {
-                    padding-left: 55px;
+                li {
+                    list-style: none;
+                    margin-right: 15px;
                     position: relative;
 
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                li+li {
                     &:before {
                         display: inline-block;
                         content: "";
@@ -163,21 +172,24 @@ section {
                         background: url('../img/sprite.png') -38px 0px;
                         position: absolute;
                         top: 0;
-                        left: 25px;
+                        left: -28px;
                     }
                 }
 
-                span+span {
+                li+li+li {
                     &::before {
                         background: url('../img/sprite.png') 21px 29px;
                         height: 18px;
+                        top: 3px;
                         ;
                     }
                 }
             }
 
-            p+p+p {
+
+            p {
                 text-align: center;
+                margin-top: 30px;
 
                 span {
                     padding-left: 15px;
@@ -202,8 +214,8 @@ section {
                 right: 0;
             }
 
-            p {
-                >span {
+            ul {
+                li+li {
                     &:before {
                         background: url('../img/sprite.png') 17px -1px;
                     }
