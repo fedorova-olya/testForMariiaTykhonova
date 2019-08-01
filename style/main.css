@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Tahoma';
+  src: url("Tahoma.eot");
+  src: local("../fonts/Tahoma/Tahoma"), url("../fonts/Tahoma/Tahoma.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma/Tahoma.woff") format("woff"), url("../fonts/Tahoma/Tahoma.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("HelveticaNeueCyr-Bold.eot");
+  src: local("../HelveticaNeueCyr-Bold"), url("../HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../HelveticaNeueCyr-Bold.woff") format("woff"), url("../HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("HelveticaNeueCyr-Thin.eot");
+  src: local("../fonts/Helvetica Neue/HelveticaNeueCyr-Thin"), url("../fonts/Helvetica Neue/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica Neue/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/Helvetica Neue/HelveticaNeueCyr-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("MyriadPro-Regular.eot");
+  src: local("../fonts/MariaPro/Myriad Pro Regular"), local("MyriadPro-Regular"), url("../fonts/MariaPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MariaPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MariaPro/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Cn Rg';
+  src: url("ProximaNovaCond-Regular.eot");
+  src: local("../fonts/ProximaNova/Proxima Nova Condensed Regular"), local("../fonts/ProximaNova/ProximaNovaCond-Regular"), url("../fonts/ProximaNova/ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaCond-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaCond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+}
+
+header .headerInfo {
+  font-size: 0;
+  margin-left: 80px;
+  text-align: left;
+}
+
+header .headerInfo a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+header .headerInfo a h1 {
+  font-size: 35px;
+  font-family: 'Myriad Pro';
+  color: #262626;
+  line-height: 116.29px;
+}
+
+header .headerInfo a + span {
+  font-size: 15px;
+  line-height: 116.29px;
+  color: #4090db;
+  border: 1px solid #4090db;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 0 0 20px 20px;
+  font-family: 'HelveticaNeueCyr';
+}
+
+header .headerInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+header .headerInfo ul li {
+  font-size: 17px;
+  color: #3d4044;
+  margin-top: -25px;
+  font-family: 'Myriad Pro';
+  list-style: none;
+  margin-right: 10px;
+}
+
+header .headerInfo ul li a span {
+  font-weight: 900;
+  line-height: 24px;
+}
+
+header .headerInfo ul li a span + span {
+  font-weight: 400;
+}
+
+section {
+  background: #fafafa;
+  -webkit-box-shadow: inset 0 0 10px #000;
+          box-shadow: inset 0 0 10px #000;
+}
+
+section div.sectionDivIng {
+  position: relative;
+  margin: 12% 0;
+}
+
+section div.sectionDivIng:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background-size: contain;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+section div.sectionDivIng .imgInfo {
+  position: absolute;
+  top: 58%;
+  left: 5%;
+  right: 5%;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+}
+
+section div.sectionDivIng .imgInfo p {
+  text-align: left;
+}
+
+section div.sectionDivIng .imgInfo p span {
+  padding-left: 55px;
+  position: relative;
+}
+
+section div.sectionDivIng .imgInfo p span:before {
+  display: inline-block;
+  content: "";
+  width: 21px;
+  height: 20px;
+  background: url("../img/sprite.png") -38px 0px;
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+
+section div.sectionDivIng .imgInfo p span + span::before {
+  background: url("../img/sprite.png") 21px 29px;
+  height: 18px;
+}
+
+section div.sectionDivIng .imgInfo p + p + p {
+  text-align: center;
+}
+
+section div.sectionDivIng .imgInfo p + p + p span {
+  padding-left: 15px;
+}
+
+section div.sectionDivIng .imgInfo p + p + p span::before {
+  display: none;
+}
+
+section div.sectionDivIng .video:after {
+  content: "";
+  width: 38px;
+  height: 30px;
+  background: url("../img/sprite.png") 0px 0px;
+  position: absolute;
+  top: -150px;
+  right: 0;
+}
+
+section div.sectionDivIng .video p > span:before {
+  background: url("../img/sprite.png") 17px -1px;
+}
+
+section + a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+  font-family: 'Myriad Pro';
+  border: 1px solid #000;
+  border-radius: 24px;
+  padding: 8px 33px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+@media (min-width: 100px) and (max-width: 767.98px) {
+  header .headerInfo a + span {
+    display: none;
+  }
+  header .headerInfo a h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  header .headerInfo {
+    margin-left: 0;
+  }
+  header .headerInfo ul li {
+    margin-top: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
