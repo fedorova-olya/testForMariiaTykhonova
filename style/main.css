@@ -132,16 +132,27 @@ section div.sectionDivIng .imgInfo {
   font-weight: bold;
 }
 
-section div.sectionDivIng .imgInfo p {
-  text-align: left;
+section div.sectionDivIng .imgInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
 }
 
-section div.sectionDivIng .imgInfo p span {
-  padding-left: 55px;
+section div.sectionDivIng .imgInfo ul li {
+  list-style: none;
+  margin-right: 15px;
   position: relative;
 }
 
-section div.sectionDivIng .imgInfo p span:before {
+section div.sectionDivIng .imgInfo ul li:last-child {
+  margin-right: 0;
+}
+
+section div.sectionDivIng .imgInfo ul li + li:before {
   display: inline-block;
   content: "";
   width: 21px;
@@ -149,23 +160,25 @@ section div.sectionDivIng .imgInfo p span:before {
   background: url("../img/sprite.png") -38px 0px;
   position: absolute;
   top: 0;
-  left: 25px;
+  left: -28px;
 }
 
-section div.sectionDivIng .imgInfo p span + span::before {
+section div.sectionDivIng .imgInfo ul li + li + li::before {
   background: url("../img/sprite.png") 21px 29px;
   height: 18px;
+  top: 3px;
 }
 
-section div.sectionDivIng .imgInfo p + p + p {
+section div.sectionDivIng .imgInfo p {
   text-align: center;
+  margin-top: 30px;
 }
 
-section div.sectionDivIng .imgInfo p + p + p span {
+section div.sectionDivIng .imgInfo p span {
   padding-left: 15px;
 }
 
-section div.sectionDivIng .imgInfo p + p + p span::before {
+section div.sectionDivIng .imgInfo p span::before {
   display: none;
 }
 
@@ -179,7 +192,7 @@ section div.sectionDivIng .video:after {
   right: 0;
 }
 
-section div.sectionDivIng .video p > span:before {
+section div.sectionDivIng .video ul li + li:before {
   background: url("../img/sprite.png") 17px -1px;
 }
 
